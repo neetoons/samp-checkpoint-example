@@ -49,8 +49,8 @@ CMD:prueba(playerid){
 	return 1;
 }
 
-//funcion que se ejeecuta cuando el jugador entra en un checkpoint
-PlayerGotCheckPoint(playerid, score){
+//funcion que se ejecutacuando el jugador entra en un checkpoint
+PlayerGotCheckpoint(playerid, score){
     DisablePlayerCheckpoint(playerid); //quita el checkpoint
     if(score == MAX_SCORED){
         SendClientMessage(playerid, -1, "Terminaste el recorrido!");
@@ -71,6 +71,6 @@ public OnPlayerSpawn(playerid){
     return 1;
 }
 public OnPlayerEnterCheckpoint(playerid) {
-   PlayerGotCheckPoint(playerid, PlayerScore[playerid]);
+   PlayerGotCheckpoint(playerid, PlayerScore[playerid]);
    return 1;
 }
