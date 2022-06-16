@@ -1,0 +1,11 @@
+{
+	"user": "neetoons",
+	"repo": "checkpoint-example",
+	"tag": "0.0.1",
+	"entry": "gamemodes\\grandlarc.pwn",
+	"output": "gamemodes/gamemodes\\grandlarc.amx",
+	"dependencies": [
+		"pawn-lang/samp-stdlib"
+	],
+	"local": true
+}
