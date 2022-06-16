@@ -15,7 +15,7 @@ new Float:CheckPointsPos[3][3] = {
     {162.4014,-72.4193,1.4297}, // 2 checkpoint
     {192.5101,-71.6351,1.4330}  // 3 checkpoint
 };
-SetCheckPoints(playerid, score){
+SetCheckpoints(playerid, score){
 	switch(score) {
 		case 1: SetPlayerCheckpoint(playerid, CheckPointsPos[0][0], CheckPointsPos[0][1],CheckPointsPos[0][2], 3.0);//checkpoint 1
 		case 2: SetPlayerCheckpoint(playerid, CheckPointsPos[1][0], CheckPointsPos[1][1],CheckPointsPos[1][2], 3.0);//checkpoint 2
@@ -38,12 +38,12 @@ CMD:prueba(playerid){
         //por si el jugador quiere iniciar de nuevo 
         DisablePlayerCheckpoint(playerid);
         PlayerScore[playerid] = 1;
-        SetCheckPoints(playerid, PlayerScore[playerid]);
+        SetCheckpoints(playerid, PlayerScore[playerid]);
         SendClientMessage(playerid, -1,"Comienza a recorrer nuevamente");
     }
     else {
         //comienza a recorrer
-        SetCheckPoints(playerid, PlayerScore[playerid]);
+        SetCheckpoints(playerid, PlayerScore[playerid]);
         SendClientMessage(playerid, -1,"Comienza a recorrer");
     }
 	return 1;
@@ -58,7 +58,7 @@ PlayerGotCheckPoint(playerid, score){
     }
     else {
         SendClientMessage(playerid, -1, "Has alcanzado un checkpoint");
-        SetCheckPoints(playerid, ++PlayerScore[playerid]);
+        SetCheckpoints(playerid, ++PlayerScore[playerid]);
     }
 	return 1;
 }
