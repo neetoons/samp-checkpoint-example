@@ -71,6 +71,6 @@ public OnPlayerSpawn(playerid){
     return 1;
 }
 public OnPlayerEnterCheckpoint(playerid) {
-   PlayerGotCheckpoint(playerid, PlayerScore[playerid]);
+    PlayerGotCheckpoint(playerid, PlayerScore[playerid]);
     return 1;
 }
