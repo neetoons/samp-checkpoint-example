@@ -49,7 +49,7 @@ CMD:prueba(playerid){
 	return 1;
 }
 
-//funcion que se ejecutacuando el jugador entra en un checkpoint
+//funcion que se ejecuta cuando el jugador entra en un checkpoint
 PlayerGotCheckpoint(playerid, score){
     DisablePlayerCheckpoint(playerid); //quita el checkpoint
     if(score == MAX_SCORED){
