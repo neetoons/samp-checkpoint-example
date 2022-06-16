@@ -5,10 +5,7 @@
             "label": "build only",
             "type": "shell",
             "command": "sampctl package build",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "isBackground": false,
             "presentation": {
                 "reveal": "silent",
@@ -33,7 +30,7 @@
             "type": "shell",
             "command": "sampctl package run",
             "group": {
-                "kind": "test",
+                "kind": "build",
                 "isDefault": true
             },
             "isBackground": true,
