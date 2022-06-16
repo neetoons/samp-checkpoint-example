@@ -1,3 +1,8 @@
+/**
+    Author: Neet🍣#1072 Discord ID: 302249242469335060
+        Descripcion: Ejemplo de como hacer una rutas con checkpoints
+    Curso de Pawn en Español: https://www.youtube.com/watch?v=74OMBVHIyzY&list=PLCI6CxS9c2WH-Pb3p1hnAgKChcqC9Ifyb
+ */
 #include <a_samp>
 #include <float>
 #include <zcmd> 

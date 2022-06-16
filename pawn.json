@@ -2,8 +2,8 @@
 	"user": "neetoons",
 	"repo": "checkpoint-example",
 	"tag": "0.0.1",
-	"entry": "gamemodes\\grandlarc.pwn",
-	"output": "gamemodes/gamemodes\\grandlarc.amx",
+	"entry": "gamemodes\\checkpoint-example.pwn",
+	"output": "gamemodes\\checkpoint-example.amx",
 	"dependencies": [
 		"pawn-lang/samp-stdlib"
 	],
