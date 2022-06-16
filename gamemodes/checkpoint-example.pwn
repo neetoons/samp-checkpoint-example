@@ -46,7 +46,7 @@ CMD:prueba(playerid){
         SetCheckpoints(playerid, PlayerScore[playerid]);
         SendClientMessage(playerid, -1,"Comienza a recorrer");
     }
-	return 1;
+    return 1;
 }
 
 //funcion que se ejecuta cuando el jugador entra en un checkpoint
@@ -60,11 +60,11 @@ PlayerGotCheckpoint(playerid, score){
         SendClientMessage(playerid, -1, "Has alcanzado un checkpoint");
         SetCheckpoints(playerid, ++PlayerScore[playerid]);
     }
-	return 1;
+    return 1;
 }
 public OnPlayerConnect(playerid){
 	PlayerScore[playerid] = 1;
-	return 1;
+    return 1;
 }
 public OnPlayerSpawn(playerid){
     firstPos(playerid);
@@ -72,5 +72,5 @@ public OnPlayerSpawn(playerid){
 }
 public OnPlayerEnterCheckpoint(playerid) {
    PlayerGotCheckpoint(playerid, PlayerScore[playerid]);
-   return 1;
+    return 1;
 }
