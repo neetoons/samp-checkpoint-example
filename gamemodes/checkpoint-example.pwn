@@ -4,11 +4,8 @@
     Curso de Pawn en Español: https://www.youtube.com/watch?v=74OMBVHIyzY&list=PLCI6CxS9c2WH-Pb3p1hnAgKChcqC9Ifyb
  */
 #include <a_samp>
-#include <float>
 #include <zcmd> 
-
-main(){ printf("corriendo servidor");}
-const MAX_SCORED = 3; // checkpoints necesarios para terminar el recorrido
+#define MAX_SCORED 3 // checkpoints necesarios para terminar el recorrido
 new PlayerScore[MAX_PLAYERS]; //puntuaje de inicio del jugador
 new Float:CheckPointsPos[3][3] = {
     {138.1951,-72.8674,1.4297}, // 1 checkpoint
@@ -74,3 +71,4 @@ public OnPlayerEnterCheckpoint(playerid) {
     PlayerGotCheckpoint(playerid, PlayerScore[playerid]);
     return 1;
 }
+main(){ printf("servidor corriendo...");}
