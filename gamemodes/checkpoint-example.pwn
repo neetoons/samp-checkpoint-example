@@ -34,7 +34,6 @@ firstPos(playerid){
 //comando /prueba
 CMD:prueba(playerid){
     firstPos(playerid);
-
     if(PlayerScore[playerid] != 1 || PlayerScore[playerid] == 3){ 
         //por si el jugador quiere iniciar de nuevo 
         DisablePlayerCheckpoint(playerid);
