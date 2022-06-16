@@ -16,13 +16,13 @@ new Float:CheckPointsPos[3][3] = {
     {192.5101,-71.6351,1.4330}  // 3 checkpoint
 };
 SetCheckpoints(playerid, score){
-	switch(score) {
-		case 1: SetPlayerCheckpoint(playerid, CheckPointsPos[0][0], CheckPointsPos[0][1],CheckPointsPos[0][2], 3.0);//checkpoint 1
-		case 2: SetPlayerCheckpoint(playerid, CheckPointsPos[1][0], CheckPointsPos[1][1],CheckPointsPos[1][2], 3.0);//checkpoint 2
-		case 3: SetPlayerCheckpoint(playerid, CheckPointsPos[2][0], CheckPointsPos[2][1],CheckPointsPos[2][2], 3.0);//checkpoint 3
-		default: return 1;
-	}
-	return 1;
+    switch(score) {
+        case 1: SetPlayerCheckpoint(playerid, CheckPointsPos[0][0], CheckPointsPos[0][1],CheckPointsPos[0][2], 3.0);//checkpoint 1
+        case 2: SetPlayerCheckpoint(playerid, CheckPointsPos[1][0], CheckPointsPos[1][1],CheckPointsPos[1][2], 3.0);//checkpoint 2
+        case 3: SetPlayerCheckpoint(playerid, CheckPointsPos[2][0], CheckPointsPos[2][1],CheckPointsPos[2][2], 3.0);//checkpoint 3
+        default: return 1;
+    }
+    return 1;
 }
 //posicion iniclal del jugador
 firstPos(playerid){
