@@ -18,7 +18,7 @@ Depending on whether your package is tested via in-game "demo tests" or
 y_testing unit-tests, you should indicate to readers what to expect below here.
 -->
 
-para probar, simplemente corre el paquete
+para probar, simplemente corre el paquete y ejecuta /prueba dentro del servidor
 
 ```bash
 sampctl package run
