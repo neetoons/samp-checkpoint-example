@@ -6,11 +6,11 @@ Ejemplo de como usar checkpoints y como crear una ruta con ellos.
 
 ## instalacion 
 
-simplemente instalalo en tu proyecto con sampctl
+Una vez descargado debes instalar las dependencias con sampctl
 
 ![test](https://raw.githubusercontent.com/neetoons/samp-checkpoint-example/master/test.gif)
 ```bash
-sampctl package install neetoons/checkpoint-example
+sampctl package ensure
 ```
 
 ## Testing
