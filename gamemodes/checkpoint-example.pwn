@@ -71,7 +71,7 @@ CMD:prueba(playerid)
 
 public OnPlayerConnect(playerid)
 {
-	PlayerScore[playerid] = 1;
+    PlayerScore[playerid] = 1;
     return 1;
 }
 public OnPlayerSpawn(playerid)
